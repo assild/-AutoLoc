@@ -1,4 +1,5 @@
 package espritpi.autoloc.domain;
 
-public class CategorieVehicule {
+public enum CategorieVehicule {
+    CITADINE, BERLINE, SUV, UTILITAIRE
 }
