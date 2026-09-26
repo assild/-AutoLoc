@@ -1,4 +1,5 @@
 package espritpi.autoloc.domain;
 
-public class StatutReservation {
+public enum StatutReservation {
+    EN_ATTENTE, CONFIRMEE, ANNULEE, TERMINEE
 }

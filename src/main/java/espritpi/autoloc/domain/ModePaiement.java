@@ -1,4 +1,5 @@
 package espritpi.autoloc.domain;
 
-public class ModePaiement {
+public enum ModePaiement {
+    CARTE, ESPECES, VIREMENT
 }

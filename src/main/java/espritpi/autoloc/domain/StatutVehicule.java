@@ -1,4 +1,5 @@
 package espritpi.autoloc.domain;
 
-public class StatutVehicule {
+public enum StatutVehicule {
+    DISPONIBLE, LOUE, MAINTENANCE
 }

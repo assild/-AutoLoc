@@ -1,4 +1,5 @@
 package espritpi.autoloc.domain;
 
-public class RoleEmploye {
+public enum RoleEmploye {
+    AGENT, MANAGER
 }
