@@ -40,7 +40,7 @@ public class Client {
     @Column(nullable = false)
     private LocalDate dateInscription;
 
-    // Un client effectue plusieurs réservations (1 - *)
+
     @OneToMany(mappedBy = "client")
     private List<Reservation> reservations = new ArrayList<>();
 }

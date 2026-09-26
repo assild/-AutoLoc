@@ -29,17 +29,17 @@ public class Reservation {
     @Column(nullable = false, length = 20)
     private StatutReservation statut;
 
-    // Une réservation concerne un seul véhicule (* - 1)
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_vehicule", nullable = false)
     private Vehicule vehicule;
 
-    // Une réservation est faite par un seul client (* - 1)
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_client", nullable = false)
     private Client client;
 
-    // Une réservation donne lieu à un seul contrat (1 - 1)
+
     @OneToOne(mappedBy = "reservation", cascade = CascadeType.ALL, orphanRemoval = true)
     private Contrat contrat;
 }

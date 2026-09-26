@@ -21,7 +21,7 @@ public class Equipement {
     @Column(nullable = false, length = 50)
     private String libelle;
 
-    // Un équipement appartient à un seul véhicule (* - 1)
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_vehicule", nullable = false)
     private Vehicule vehicule;

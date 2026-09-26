@@ -31,7 +31,7 @@ public class Paiement {
     @Column(nullable = false, length = 20)
     private ModePaiement modePaiement;
 
-    // Un paiement appartient à un seul contrat (* - 1)
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_contrat", nullable = false)
     private Contrat contrat;

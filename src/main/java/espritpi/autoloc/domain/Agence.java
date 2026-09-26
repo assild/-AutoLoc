@@ -33,11 +33,10 @@ public class Agence {
     @Column(nullable = false, length = 20)
     private String telephone;
 
-    // Une agence possède plusieurs véhicules (1 - *)
+
     @OneToMany(mappedBy = "agence", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Vehicule> vehicules = new ArrayList<>();
 
-    // Une agence emploie plusieurs employés (1 - *)
     @OneToMany(mappedBy = "agence", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Employe> employes = new ArrayList<>();
 }
